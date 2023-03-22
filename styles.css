@@ -1,0 +1,64 @@
+body {
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-link {
+    color: #ffffff;
+    
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+}
+
+.navbar-brand {
+    color: #ffffff;
+    margin-left: 0;
+}
+
+.overview {
+    color: #ffffff;
+    text-align: center;
+    padding: 300px;
+}
+
+.experience,
+.education,
+.projects,
+.about,
+.contact {
+    text-align: center;
+    padding: 200px;
+    color: #ffffff;
+}
+.header-text-size{
+    font-size: 80px;
+}
+.text-regular-size{
+    font-size: 20px;
+}
+.icon-padding{
+    
+    margin-right: 20px;
+}
+.icon-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.header-y-padding{
+    padding-bottom: 100px;
+    font-size: 80px;
+}
+.text-center{
+    text-align: center;
+}
+.custom-input {
+    width: 100%; /* Adjust the width as needed */
+    height: auto; /* Adjust the height for input elements, if needed */
+}
