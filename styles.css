@@ -62,3 +62,48 @@ body {
     width: 100%; /* Adjust the width as needed */
     height: auto; /* Adjust the height for input elements, if needed */
 }
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .overview {
+        padding: 150px 20px;
+        text-align: left;
+    }
+
+    .header-text-size {
+        font-size: 40px;
+    }
+
+    .text-regular-size {
+        font-size: 16px;
+    }
+
+    .experience,
+    .education,
+    .projects,
+    .about,
+    .contact {
+        padding: 100px 20px;
+    }
+
+    .icon-container img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-text-size {
+        font-size: 30px;
+    }
+
+    .icon-container img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .overview {
+        padding: 100px 10px;
+    }
+}
