@@ -163,27 +163,31 @@ body {
 
 @media (max-width: 480px) {
     .overview {
-        padding: 100px 5px;
-        flex-direction: column;
-        text-align: center;
+        padding: 50px 10px;
     }
 
     .overview .row {
-        flex-direction: column;
+        display: flex;
+        flex-wrap: nowrap; /* Prevents wrapping */
+        align-items: center; /* Ensures vertical alignment */
+        justify-content: center; /* Ensures proper horizontal spacing */
+        flex-direction: row; /* Align side-by-side */
     }
 
     .overview .col-md-6 {
-        width: 100%;
-        text-align: center;
+        width: 50%; /* Ensures equal width for both columns */
+        text-align: left;
     }
 
     .overview img {
+        max-width: 100%;
         max-height: 200px;
-        margin: 20px auto;
+        margin: 0 auto; /* Centers the image */
+        display: block;
     }
 
     .header-text-size {
-        font-size: 35px;
+        font-size: 28px;
     }
 
     .text-regular-size {
