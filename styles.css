@@ -2,6 +2,8 @@ body {
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
     overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-link {
@@ -13,6 +15,7 @@ body {
     position: fixed;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
     
 }
 
@@ -25,7 +28,16 @@ body {
     color: #ffffff;
     text-align: center;
     padding: 300px;
+    box-sizing: border-box;
 }
+.overview img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    max-height: 400px;
+}
+
 
 .experience,
 .education,
@@ -33,23 +45,26 @@ body {
 .about,
 .contact {
     text-align: center;
-    padding: 200px;
+    padding: 200px 20px;
+    box-sizing: border-box;
     color: #ffffff;
 }
 .header-text-size{
     font-size: 80px;
+    word-wrap: break-word;
 }
 .text-regular-size{
     font-size: 20px;
+    word-wrap: break-word;
 }
 .icon-padding{
-    
     margin-right: 20px;
 }
 .icon-container{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 10px;
 }
 .header-y-padding{
     padding-bottom: 100px;
@@ -68,6 +83,10 @@ body {
 @media (max-width: 992px) {
     .overview {
         padding: 200px 15px;
+    }
+
+    .overview img {
+        max-height: 300px;
     }
 
     .header-text-size {
@@ -97,6 +116,10 @@ body {
         padding: 150px 10px;
     }
 
+    .overview img {
+        max-height: 250px;
+    }
+
     .header-text-size {
         font-size: 50px;
     }
@@ -123,6 +146,10 @@ body {
     .overview {
         padding: 100px 5px;
         text-align: left;
+    }
+
+    .overview img {
+        max-height: 200px;
     }
 
     .header-text-size {
