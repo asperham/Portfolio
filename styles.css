@@ -163,18 +163,25 @@ body {
 @media (max-width: 768px) {
 
     .navbar-nav {
-        text-align: center; /* Center-align items in mobile */
+        gap: 10px; /* Add consistent spacing between links */
+        justify-content: center; /* Center-align links */
     }
 
     .navbar-nav .nav-link {
-        padding: 12px 0;
-        font-size: 16px;
+        font-size: 14px; /* Smaller font size for mobile */
+        padding: 5px 10px; /* Adjust padding around links */
+        margin: 0 5px; /* Add space between links */
+    }
+
+    .navbar {
+        padding: 0.5rem 1rem; /* Smaller padding for mobile */
     }
 
     .navbar-collapse {
         display: flex !important;
         flex-direction: row; /* Ensures horizontal alignment */
     }
+    
 
     .overview {
         padding: 150px 10px;
@@ -211,14 +218,20 @@ body {
 
 @media (max-width: 480px) {
     .navbar-nav {
-        text-align: center; /* Center-align items in mobile */
+        gap: 10px; /* Add consistent spacing between links */
+        justify-content: center; /* Center-align links */
     }
 
     .navbar-nav .nav-link {
-        padding: 12px 0;
-        font-size: 16px;
+        font-size: 14px; /* Smaller font size for mobile */
+        padding: 5px 10px; /* Adjust padding around links */
+        margin: 0 5px; /* Add space between links */
     }
 
+    .navbar {
+        padding: 0.5rem 1rem; /* Smaller padding for mobile */
+    }
+    
     .navbar-collapse {
         display: flex !important;
         flex-direction: row; /* Ensures horizontal alignment */
