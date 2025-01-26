@@ -22,6 +22,10 @@ body {
     margin-left: 10px; /* Adjust spacing as needed */
 }
 
+.navbar-collapse {
+    display: flex !important;
+    flex-direction: row; /* Ensures horizontal alignment */
+}
 
 .overview {
     color: #ffffff;
@@ -111,7 +115,11 @@ body {
         padding: 12px 0;
         font-size: 16px;
     }
-    
+    .navbar-collapse {
+        display: flex !important;
+        flex-direction: row; /* Ensures horizontal alignment */
+    }
+
     .overview {
         padding: 200px 15px;
     }
@@ -153,6 +161,11 @@ body {
     .navbar-nav .nav-link {
         padding: 12px 0;
         font-size: 16px;
+    }
+
+    .navbar-collapse {
+        display: flex !important;
+        flex-direction: row; /* Ensures horizontal alignment */
     }
 
     .overview {
@@ -197,6 +210,12 @@ body {
         padding: 12px 0;
         font-size: 16px;
     }
+    
+    .navbar-collapse {
+        display: flex !important;
+        flex-direction: row; /* Ensures horizontal alignment */
+    }
+
     .overview {
         padding: 150px 10px;
     }
