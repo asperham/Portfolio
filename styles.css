@@ -27,6 +27,7 @@ body {
     flex-direction: row; /* Ensures horizontal alignment */
 }
 
+
 .overview {
     color: #ffffff;
     text-align: center;
@@ -210,7 +211,7 @@ body {
         padding: 12px 0;
         font-size: 16px;
     }
-    
+
     .navbar-collapse {
         display: flex !important;
         flex-direction: row; /* Ensures horizontal alignment */
