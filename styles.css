@@ -16,7 +16,10 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1000;
     padding: 0.5rem 1rem;
-    text-align: right;
+}
+
+.navbar-nav {
+    margin-left: 10px; /* Adjust spacing as needed */
 }
 
 
