@@ -16,15 +16,7 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1000;
     padding: 0.5rem 1rem;
-}
-
-.navbar-brand {
-    color: #ffffff;
-    margin-left: 0;
-}
-
-.navbar-nav {
-    justify-content: flex-end; /* Ensures content aligns to the right */
+    text-align: right;
 }
 
 
@@ -107,6 +99,16 @@ body {
 
 /* Responsive Design */
 @media (max-width: 992px) {
+
+    .navbar-nav {
+        text-align: center; /* Center-align items in mobile */
+    }
+
+    .navbar-nav .nav-link {
+        padding: 12px 0;
+        font-size: 16px;
+    }
+    
     .overview {
         padding: 200px 15px;
     }
@@ -136,6 +138,8 @@ body {
         height: 40px;
     }
 }
+
+/*Horizontal Devices*/
 
 @media (max-width: 768px) {
 
@@ -179,6 +183,8 @@ body {
     }
 }
 
+/*Vertical Devices*/
+
 @media (max-width: 480px) {
     .navbar-nav {
         text-align: center; /* Center-align items in mobile */
@@ -188,7 +194,6 @@ body {
         padding: 12px 0;
         font-size: 16px;
     }
-    
     .overview {
         padding: 150px 10px;
     }
