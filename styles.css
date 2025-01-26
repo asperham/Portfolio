@@ -223,7 +223,7 @@ body {
     }
 
     .navbar-nav .nav-link {
-        font-size: 14px; /* Smaller font size for mobile */
+        font-size: 10px; /* Smaller font size for mobile */
         padding: 5px 10px; /* Adjust padding around links */
         margin: 0 5px; /* Add space between links */
     }
@@ -231,7 +231,7 @@ body {
     .navbar {
         padding: 0.5rem 1rem; /* Smaller padding for mobile */
     }
-    
+
     .navbar-collapse {
         display: flex !important;
         flex-direction: row; /* Ensures horizontal alignment */
