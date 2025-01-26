@@ -27,6 +27,13 @@ body {
     flex-direction: row; /* Ensures horizontal alignment */
 }
 
+.navbar-nav .nav-item {
+    margin: 0 10px; /* Adjust spacing as needed */
+}
+
+.navbar-toggler {
+    margin-left: auto;
+}
 
 .overview {
     color: #ffffff;
