@@ -168,23 +168,42 @@ body {
 @media (max-width: 768px) {
 
     .navbar-nav {
-        gap: 10px; /* Add consistent spacing between links */
-        justify-content: flex-start; /* Center-align links */
+        align-items: center; /* Add consistent spacing between links */
+        justify-content: space-between; /* Center-align links */
+        display: flex;
+        padding: 0.5rem 1rem;
     }
 
-    .navbar-nav .nav-link {
-        font-size: 14px; /* Smaller font size for mobile */
-        padding: 5px 10px; /* Adjust padding around links */
-        margin: 0 5px; /* Add space between links */
+    .navbar-brand{
+        margin-right: 8px;
+    }
+    
+    .navbar-nav {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 10px;
+    }
+    .nav-link{
+        font-size: 10px
+        padding: 0;
+        text-align: center;
+        
     }
 
     .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         padding: 0.5rem 1rem; /* Smaller padding for mobile */
     }
 
     .navbar-collapse {
+        flex-grow: unset;
         display: flex !important;
         flex-direction: row; /* Ensures horizontal alignment */
+        align-items: center; 
+        justify-content: flex-start;
     }
     
 
