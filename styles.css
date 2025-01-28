@@ -227,7 +227,7 @@ body {
     }
 
     .navbar-nav .nav-link {
-        padding: 0px 2px;
+        padding: 0px 2px 2px;
         font-size: 8px; /* Smaller font size for mobile */
     }
 
