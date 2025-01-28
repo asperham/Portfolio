@@ -236,6 +236,7 @@ body {
     .navbar-collapse {
         display: flex !important;
         flex-direction: row; /* Ensures horizontal alignment */
+        flex-wrap: nowrap;
     }
 
     .overview {
