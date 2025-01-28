@@ -218,12 +218,12 @@ body {
 
 @media (max-width: 480px) {
     .navbar-nav {
-        gap: px; /* Add consistent spacing between links */
+        gap: 5px; /* Add consistent spacing between links */
         justify-content: flex-start; /* Center-align links */
     }
 
     .navbar-nav .nav-link {
-        font-size: 10px; /* Smaller font size for mobile */
+        font-size: 8px; /* Smaller font size for mobile */
         padding: 0px 5px; /* Adjust padding around links */
         margin: 0 5px; /* Add space between links */
     }
