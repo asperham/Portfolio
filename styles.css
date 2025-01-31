@@ -165,87 +165,51 @@ body {
 
 /*Horizontal Devices*/
 
-@media (max-width: 768px) {
-    
-    /*Horizontal Devices*/
-
     @media (max-width: 768px) {
-       .container-fluid {
-    display: flex;
-    flex-wrap: nowrap;           /* Prevent stacking */
-    justify-content: flex-start; /* Left align items */
-    align-items: center;
-    padding-left: 0;             /* Remove any extra left padding if present */
-  }
-  
-  /* Ensure the brand image stays at the left without extra margins */
-  .navbar-brand {
-    margin: 0;
-  }
-  
-  /* Hide the toggler button on mobile */
-  .navbar-toggler {
-    display: none;
-  }
-  
-  /* Force the collapse container (and thus the nav links) to display as a flex row */
-  .navbar-collapse {
-    display: flex !important;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    flex-grow: 0;  /* Prevent it from expanding and pushing items to the next line */
-  }
-  
-  /* Arrange the nav links horizontally */
-  .navbar-nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 10px;            /* Adjust spacing between links as needed */
-    margin: 0 0 0 10px;    /* A little left margin to separate from the brand */
-  }
-  
-  /* Optional: Adjust the nav link appearance for mobile */
-  .nav-link {
-    font-size: 14px;      /* Change as needed */
-    padding: 0.5rem;
-    text-align: center;
-  }
+        .container-fluid {
+            display: flex;
+            flex-wrap: nowrap;           /* Prevent stacking */
+            justify-content: flex-start; /* Left align items */
+            align-items: center;
+            padding-left: 0;             /* Remove any extra left padding if present */
+          }
+          
+          /* Ensure the brand image stays at the left without extra margins */
+          .navbar-brand {
+            margin: 0;
+          }
+          
+          /* Hide the toggler button on mobile */
+          .navbar-toggler {
+            display: none;
+          }
+          
+          /* Force the collapse container (and thus the nav links) to display as a flex row */
+          .navbar-collapse {
+            display: flex !important;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            flex-grow: 0;  /* Prevent it from expanding and pushing items to the next line */
+          }
+          
+          /* Arrange the nav links horizontally */
+          .navbar-nav {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 10px;            /* Adjust spacing between links as needed */
+            margin: 0 0 0 10px;    /* A little left margin to separate from the brand */
+          }
+          
+          /* Optional: Adjust the nav link appearance for mobile */
+          .nav-link {
+            font-size: 14px;      /* Change as needed */
+            padding: 0.5rem;
+            text-align: center;
+          }
         
-
-    .overview {
-        padding: 150px 10px;
-    }
-
-    .overview img {
-        max-height: 250px;
-        margin: 10px auto;
-    }
-
-    .header-text-size {
-        font-size: 50px;
-    }
-
-    .text-regular-size {
-        font-size: 16px;
-    }
-
-    .experience,
-    .education,
-    .projects,
-    .about,
-    .contact {
-        padding: 100px 10px;
-    }
-
-    .icon-container img {
-        width: 30px;
-        height: 30px;
-    }
-}
-    
 
     .overview {
         padding: 150px 10px;
