@@ -194,7 +194,7 @@ body {
           }
           
           /* Arrange the nav links horizontally */
-          .navbar-nav {
+          .navbar-nav .nav-item {
             display: flex;
             flex-direction: row;
             align-items: center;
