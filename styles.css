@@ -170,44 +170,49 @@ body {
     /*Horizontal Devices*/
 
     @media (max-width: 768px) {
-        /* Ensure the entire navbar container is left aligned and does not wrap */
-    .container-fluid {
-        display: flex;
-        flex-wrap: nowrap;         /* Prevent items from stacking */
-        align-items: center;
-        justify-content: flex-start;  /* Left align items */
-    }
-
-    /* Hide the toggler button so the links are always visible */
-    .navbar-toggler {
-        display: none;
-    }
-    
-    /* Force the collapse container to be visible as a flex row */
-    .navbar-collapse {
-        display: flex !important;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-start;
-        flex-grow: 0;  /* Prevent it from expanding */
-    }
-    
-    /* Display nav links in a horizontal row starting from the left */
-    .navbar-nav {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-start;
-        gap: 10px;             /* Adjust spacing between links as desired */
-        margin-left: 10px;     /* Optional spacing between the brand image and nav links */
-    }
-    
-    /* Optional: adjust the nav link appearance */
-    .nav-link {
-        font-size: 14px;       /* Adjust font size as needed */
-        padding: 0.5rem;
-        text-align: center;
-    }
+       .container-fluid {
+    display: flex;
+    flex-wrap: nowrap;           /* Prevent stacking */
+    justify-content: flex-start; /* Left align items */
+    align-items: center;
+    padding-left: 0;             /* Remove any extra left padding if present */
+  }
+  
+  /* Ensure the brand image stays at the left without extra margins */
+  .navbar-brand {
+    margin: 0;
+  }
+  
+  /* Hide the toggler button on mobile */
+  .navbar-toggler {
+    display: none;
+  }
+  
+  /* Force the collapse container (and thus the nav links) to display as a flex row */
+  .navbar-collapse {
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-grow: 0;  /* Prevent it from expanding and pushing items to the next line */
+  }
+  
+  /* Arrange the nav links horizontally */
+  .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;            /* Adjust spacing between links as needed */
+    margin: 0 0 0 10px;    /* A little left margin to separate from the brand */
+  }
+  
+  /* Optional: Adjust the nav link appearance for mobile */
+  .nav-link {
+    font-size: 14px;      /* Change as needed */
+    padding: 0.5rem;
+    text-align: center;
+  }
         
 
     .overview {
