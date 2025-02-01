@@ -206,9 +206,9 @@ body {
           /* Optional: Adjust the nav link appearance for mobile */
           .nav-link {
             font-size: 14px;      /* Change as needed */
-            padding: 0.5rem;
+            padding: 0 0 0 0;
             text-align: center;
-            margin: 0 0.5rem;
+            margin: 0 0 0 0;
             
           }
         
