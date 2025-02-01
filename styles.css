@@ -119,7 +119,7 @@ body {
 
 /* Responsive Design */
 @media (max-width: 992px) {
-  /* Ensure the navbar itself is left-aligned and in a row */
+ /* Ensure the navbar itself is left-aligned and in a row */
   .navbar {
     display: flex;
     justify-content: flex-start;
@@ -179,7 +179,7 @@ body {
     padding: 0.5rem !important;
     white-space: nowrap;
   }
-
+    
     .overview {
         padding: 200px 15px;
     }
