@@ -15,7 +15,7 @@ body {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1000;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 
 .navbar-nav {
@@ -31,13 +31,13 @@ body {
 }
 
 .navbar-nav .nav-item {
-    margin: 0 10px; /* Adjust spacing as needed */
+    margin: 0.5rem 0.5em 0.5rem 0.5rem; /* Adjust spacing as needed */
     flex-direction: row;
 
 }
 
 .navbar-toggler {
-    margin-left: auto;
+    margin-left: 0 0 0 0;
 }
 
 .overview {
@@ -200,15 +200,15 @@ body {
             align-items: center;
             justify-content: flex-start;
             gap: 10px;            /* Adjust spacing between links as needed */
-            margin: 0 0 0 15px;    /* A little left margin to separate from the brand */
+            margin: 0.5rem 0.5rem 0.5rem 0.5rem;    /* A little left margin to separate from the brand */
           }
           
           /* Optional: Adjust the nav link appearance for mobile */
           .nav-link {
             font-size: 14px;      /* Change as needed */
-            padding: 0 0 0 0;
+            padding: 0.5rem 0.5rem 0.5rem 0.5rem;
             text-align: center;
-            margin: 0 0 0 0;
+            margin: 0.5rem 0.5rem 0.5rem 0.5rem;
             
           }
         
@@ -331,4 +331,3 @@ body {
         height: 25px;
     }
 }
-
