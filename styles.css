@@ -165,7 +165,7 @@ body {
 
 /*Horizontal Devices*/
 
-    @media (max-width: 768px) {
+  @media (max-width: 768px) {
         .container-fluid {
             display: flex;
             flex-wrap: nowrap;           /* Prevent stacking */
@@ -176,7 +176,8 @@ body {
           
           /* Ensure the brand image stays at the left without extra margins */
           .navbar-brand {
-            margin-right: 0px;
+            margin-right: 0;
+            flex-shrink: 0;
           }
           
           /* Hide the toggler button on mobile */
@@ -190,26 +191,35 @@ body {
             flex-direction: row;
             align-items: center;
             justify-content: flex-start;
-            flex-grow: 0;  /* Prevent it from expanding and pushing items to the next line */
+            flex-grow: 0;
+            flex-basis: auto;
+            width: auto;
+          }
+          .navbar-nav {
+            display: flex !important;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: flex-start;
+            margin-left: 0; /* Remove extra left margin if any */
           }
           
           /* Arrange the nav links horizontally */
           .navbar-nav .nav-item {
             display: flex;
-            flex-direction: row;
             align-items: center;
-            justify-content: flex-start;
-            gap: 10px;            /* Adjust spacing between links as needed */
-            margin: 0.5rem 0.5rem 0.5rem 0.5rem;    /* A little left margin to separate from the brand */
+            justify-content: center;
+            margin: 0;      /* Remove extra margins to prevent wrapping */
+            gap: 10px;     /* Adjust spacing between links as needed */
           }
           
           /* Optional: Adjust the nav link appearance for mobile */
           .nav-link {
-            font-size: 14px;      /* Change as needed */
-            padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+            font-size: 14px;
+            padding: 0.5rem;
             text-align: center;
-            margin: 0.5rem 0.5rem 0.5rem 0.5rem;
-            
+            margin: 0;
+            white-space: nowrap;
           }
         
 
