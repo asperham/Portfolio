@@ -165,19 +165,19 @@ body {
 
 /*Horizontal Devices*/
 
-  @media (max-width: 768px) {
-  /* Make sure the entire navbar container lays out its children in a single row */
+ @media (max-width: 768px) {
+  /* Ensure the entire navbar container lays out its children in a single row */
   .container-fluid {
     display: flex;
     flex-wrap: nowrap;           /* Prevent wrapping */
-    justify-content: flex-start; /* Align items to the left */
+    justify-content: flex-start !important; /* Align items to the left */
     align-items: center;
     padding-left: 0;
   }
   
-  /* Force the brand image to sit flush at the left */
+  /* Keep the brand image flush at the left */
   .navbar-brand {
-    margin-right: 0 !important;  /* Remove any auto margins */
+    margin-right: 0 !important;  /* Remove any extra margins */
     flex-shrink: 0;              /* Prevent it from shrinking */
   }
   
@@ -186,40 +186,39 @@ body {
     display: none;
   }
   
-  /* Override the collapse container so it only occupies the width it needs */
+  /* Force the collapse container to only occupy as much space as needed */
   .navbar-collapse {
     display: flex !important;
-    flex: 0 0 auto !important;   /* Prevent flex-grow and flex-shrink */
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
-    width: auto !important;
+    justify-content: flex-start !important; /* Force left alignment */
+    margin-left: 0 !important;              /* Remove any auto margins */
+    width: auto !important;                 /* Do not stretch to full width */
   }
   
-  /* Arrange the nav links in a single horizontal row with no extra left margin */
+  /* Arrange the nav links in a single horizontal row next to the brand */
   .navbar-nav {
     display: flex !important;
     flex-direction: row;
-    flex-wrap: nowrap;
     align-items: center;
-    justify-content: flex-start;
-    margin-left: 0 !important;
+    justify-content: flex-start !important;
+    margin-left: 0 !important;   /* Remove default left margin */
   }
   
-  /* Ensure individual nav items and links do not force wrapping */
+  /* Remove any extra spacing from each nav item */
   .navbar-nav .nav-item {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0;      /* Remove extra margins */
-    gap: 10px;     /* Adjust spacing between links as desired */
+    margin: 0 !important;       /* Remove margins that might cause spacing */
+    padding: 0 10px;            /* Add a little horizontal padding between links */
   }
   
+  /* Adjust the nav links */
   .nav-link {
     font-size: 14px;
-    padding: 0.5rem;
+    padding: 0.5rem !important;
     text-align: center;
-    margin: 0;
     white-space: nowrap;  /* Prevent text wrapping */
   }
         
