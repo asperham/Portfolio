@@ -166,61 +166,62 @@ body {
 /*Horizontal Devices*/
 
   @media (max-width: 768px) {
-        .container-fluid {
-            display: flex;
-            flex-wrap: nowrap;           /* Prevent stacking */
-            justify-content: flex-start; /* Left align items */
-            align-items: center;
-            padding-left: 0;             /* Remove any extra left padding if present */
-          }
-          
-          /* Ensure the brand image stays at the left without extra margins */
-          .navbar-brand {
-            margin-right: 0;
-            flex-shrink: 0;
-          }
-          
-          /* Hide the toggler button on mobile */
-          .navbar-toggler {
-            display: none;
-          }
-          
-          /* Force the collapse container (and thus the nav links) to display as a flex row */
-          .navbar-collapse {
-            display: flex !important;
-            flex-direction: row;
-            align-items: center;
-            justify-content: flex-start;
-            flex-grow: 0;
-            flex-basis: auto;
-            width: auto;
-          }
-          .navbar-nav {
-            display: flex !important;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            align-items: center;
-            justify-content: flex-start;
-            margin-left: 0; /* Remove extra left margin if any */
-          }
-          
-          /* Arrange the nav links horizontally */
-          .navbar-nav .nav-item {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0;      /* Remove extra margins to prevent wrapping */
-            gap: 10px;     /* Adjust spacing between links as needed */
-          }
-          
-          /* Optional: Adjust the nav link appearance for mobile */
-          .nav-link {
-            font-size: 14px;
-            padding: 0.5rem;
-            text-align: center;
-            margin: 0;
-            white-space: nowrap;
-          }
+         /* Make sure the entire navbar container lays out its children in a single row */
+   .container-fluid {
+    display: flex;
+    flex-wrap: nowrap;           /* Prevent wrapping */
+    justify-content: flex-start; /* Align items to the left */
+    align-items: center;
+    padding-left: 0;
+  }
+  
+  /* Force the brand image to sit flush at the left */
+  .navbar-brand {
+    margin-right: 0 !important;  /* Remove any auto margins */
+    flex-shrink: 0;              /* Prevent it from shrinking */
+  }
+  
+  /* Hide the toggler button on mobile */
+  .navbar-toggler {
+    display: none;
+  }
+  
+  /* Override the collapse container so it only occupies the width it needs */
+  .navbar-collapse {
+    display: flex !important;
+    flex: 0 0 auto !important;   /* Prevent flex-grow and flex-shrink */
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: auto !important;
+  }
+  
+  /* Arrange the nav links in a single horizontal row with no extra left margin */
+  .navbar-nav {
+    display: flex !important;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 0 !important;
+  }
+  
+  /* Ensure individual nav items and links do not force wrapping */
+  .navbar-nav .nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;      /* Remove extra margins */
+    gap: 10px;     /* Adjust spacing between links as desired */
+  }
+  
+  .nav-link {
+    font-size: 14px;
+    padding: 0.5rem;
+    text-align: center;
+    margin: 0;
+    white-space: nowrap;  /* Prevent text wrapping */
+  }
         
 
     .overview {
