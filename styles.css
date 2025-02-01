@@ -166,8 +166,8 @@ body {
 /*Horizontal Devices*/
 
   @media (max-width: 768px) {
-         /* Make sure the entire navbar container lays out its children in a single row */
-   .container-fluid {
+  /* Make sure the entire navbar container lays out its children in a single row */
+  .container-fluid {
     display: flex;
     flex-wrap: nowrap;           /* Prevent wrapping */
     justify-content: flex-start; /* Align items to the left */
