@@ -200,7 +200,7 @@ body {
             align-items: center;
             justify-content: flex-start;
             gap: 10px;            /* Adjust spacing between links as needed */
-            margin: 0 0 0 10px;    /* A little left margin to separate from the brand */
+            margin: 0 0 0 0;    /* A little left margin to separate from the brand */
           }
           
           /* Optional: Adjust the nav link appearance for mobile */
