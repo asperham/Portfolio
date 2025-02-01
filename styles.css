@@ -119,60 +119,65 @@ body {
 
 /* Responsive Design */
 @media (max-width: 992px) {
-  /* Ensure the navbar and its inner container are laid out in one row */
-  .navbar,
+  /* Ensure the navbar itself is left-aligned and in a row */
+  .navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  
+  /* Ensure the inner container arranges its children in a row */
   .container-fluid {
     display: flex;
     flex-wrap: nowrap;
-    align-items: center;
     justify-content: flex-start;
+    align-items: center;
     padding-left: 0;
   }
   
-  /* Keep the brand image on the far left */
+  /* Keep the brand image on the left with no extra margin */
   .navbar-brand {
     flex-shrink: 0;
     margin-right: 0 !important;
   }
   
-  /* Hide the toggler so links are always visible */
+  /* Hide the toggler so the nav links are always visible */
   .navbar-toggler {
     display: none;
   }
   
-  /* Force the collapse container to only occupy needed width */
+  /* Override the collapse container so it only takes up the needed width */
   .navbar-collapse {
-    display: inline-flex !important;
+    display: flex !important;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: flex-start !important;
-    width: auto !important;
-    margin-left: 0 !important;
+    width: auto !important;        /* Prevent it from stretching full width */
+    margin-left: 0 !important;      /* Remove any auto margins */
   }
   
-  /* Arrange the nav list as an inline row */
+  /* Arrange the nav list as a horizontal row, removing extra left margin */
   .navbar-nav {
-    display: inline-flex !important;
+    display: flex !important;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: flex-start !important;
     margin-left: 0 !important;
-    padding-left: 0;
   }
   
-  /* Set spacing for each nav item */
+  /* Remove extra margins or padding on each nav item */
   .navbar-nav .nav-item {
     margin: 0 !important;
-    padding: 0 10px;  /* Adjust horizontal spacing as needed */
+    padding: 0 10px;  /* Adjust horizontal spacing between links as needed */
   }
   
   /* Style the nav links */
   .nav-link {
     padding: 0.5rem !important;
-    white-space: nowrap;  /* Prevent wrapping */
-    font-size: 16px;       /* Adjust font size if desired */
+    white-space: nowrap;
   }
 
     .overview {
