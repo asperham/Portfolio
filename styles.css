@@ -119,19 +119,61 @@ body {
 
 /* Responsive Design */
 @media (max-width: 992px) {
-
-    .navbar-nav {
-        text-align: center; /* Center-align items in mobile */
-    }
-
-    .navbar-nav .nav-link {
-        padding: 12px 0;
-        font-size: 16px;
-    }
-    .navbar-collapse {
-        display: flex !important;
-        flex-direction: row; /* Ensures horizontal alignment */
-    }
+  /* Ensure the navbar and its inner container are laid out in one row */
+  .navbar,
+  .container-fluid {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 0;
+  }
+  
+  /* Keep the brand image on the far left */
+  .navbar-brand {
+    flex-shrink: 0;
+    margin-right: 0 !important;
+  }
+  
+  /* Hide the toggler so links are always visible */
+  .navbar-toggler {
+    display: none;
+  }
+  
+  /* Force the collapse container to only occupy needed width */
+  .navbar-collapse {
+    display: inline-flex !important;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start !important;
+    width: auto !important;
+    margin-left: 0 !important;
+  }
+  
+  /* Arrange the nav list as an inline row */
+  .navbar-nav {
+    display: inline-flex !important;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start !important;
+    margin-left: 0 !important;
+    padding-left: 0;
+  }
+  
+  /* Set spacing for each nav item */
+  .navbar-nav .nav-item {
+    margin: 0 !important;
+    padding: 0 10px;  /* Adjust horizontal spacing as needed */
+  }
+  
+  /* Style the nav links */
+  .nav-link {
+    padding: 0.5rem !important;
+    white-space: nowrap;  /* Prevent wrapping */
+    font-size: 16px;       /* Adjust font size if desired */
+  }
 
     .overview {
         padding: 200px 15px;
@@ -262,26 +304,61 @@ body {
 /*Vertical Devices*/
 
 @media (max-width: 480px) {
-    .navbar-nav {
-        gap: 3px; /* Add consistent spacing between links */
-        flex-wrap: nowrap;
-        justify-content: flex-start; /* Center-align links */
-    }
-
-    .navbar-nav .nav-link {
-        padding: 0px 2px 2px;
-        font-size: 8px; /* Smaller font size for mobile */
-    }
-
-    .navbar {
-        padding: 0.5rem 1rem; /* Smaller padding for mobile */
-    }
-
-    .navbar-collapse {
-        display: flex !important;
-        flex-direction: row; /* Ensures horizontal alignment */
-        flex-wrap: nowrap;
-    }
+  /* Ensure the navbar and its container are in a single left‑aligned row */
+  .navbar,
+  .container-fluid {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 0;
+  }
+  
+  /* Keep the brand image flush on the left */
+  .navbar-brand {
+    flex-shrink: 0;
+    margin-right: 0 !important;
+  }
+  
+  /* Hide the toggler */
+  .navbar-toggler {
+    display: none;
+  }
+  
+  /* Force the collapse container to only be as wide as its content */
+  .navbar-collapse {
+    display: inline-flex !important;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start !important;
+    width: auto !important;
+    margin-left: 0 !important;
+  }
+  
+  /* Arrange nav links in an inline row */
+  .navbar-nav {
+    display: inline-flex !important;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start !important;
+    margin-left: 0 !important;
+    padding-left: 0;
+  }
+  
+  /* Reduce spacing between nav items on very small screens */
+  .navbar-nav .nav-item {
+    margin: 0 !important;
+    padding: 0 5px;
+  }
+  
+  /* Adjust nav link styling for small screens */
+  .nav-link {
+    padding: 0.5rem !important;
+    white-space: nowrap;
+    font-size: 12px; /* Slightly smaller font size */
+  }
 
     .overview {
         padding: 150px 10px;
