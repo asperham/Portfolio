@@ -176,7 +176,7 @@ body {
           
           /* Ensure the brand image stays at the left without extra margins */
           .navbar-brand {
-            margin: 0;
+            margin-right: 0px;
           }
           
           /* Hide the toggler button on mobile */
